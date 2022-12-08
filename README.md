@@ -14,7 +14,7 @@ Instructions for using the site are as follows:
 3. Post an image in response to your prompt. 
 4. Remember to tag your post with the exact prompt.
 
-### CRUD module implementatiion where images can be uploaded and stored in MongoDB Atlas
+### CRUD module implementation where images can be uploaded and stored in MongoDB Atlas
 All uploaded images are stored to a MongoDB Atlas database with unique id, original filename, and content type
 
 <img src="/client/public/images/mongodb.png" alt="mongodb">
