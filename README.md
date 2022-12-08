@@ -1,8 +1,6 @@
 # Still Life
 By Eileen Chang
 
-https://bluet-frontend.herokuapp.com/
-
 **Note as of Nov 2022: Heroku removed their free plans ... Currently transfering the code to another cloud platform.**
 
 ## Description
