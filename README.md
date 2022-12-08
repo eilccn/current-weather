@@ -16,7 +16,7 @@ Instructions for using the site are as follows:
 ### CRUD module implementatiion where images can be uploaded and stored in MongoDB Atlas
 All uploaded images are stored to a MongoDB Atlas database with unique id, original filename, and content type
 
-<img src="./public/images/mongodb.png" alt="mongodb">
+<img src="/Users/eileenchang/1-social-media/client/public/images/mongodb.png" alt="mongodb">
 
 ### Home (not signed in)
 Features:
