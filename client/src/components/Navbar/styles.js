@@ -1,9 +1,9 @@
 import { makeStyles } from "@material-ui/core/styles";
-import { deepPurple } from "@material-ui/core/colors";
+import { blueGrey } from "@material-ui/core/colors";
 
 export default makeStyles((theme) => ({
   appBar: {
-    borderRadius: 15,
+    borderRadius: 5,
     margin: "30px 0",
     display: "flex",
     flexDirection: "row",
@@ -15,7 +15,7 @@ export default makeStyles((theme) => ({
     },
   },
   heading: {
-    color: theme.palette.primary.main,
+    color: theme.palette.success.main,
     textDecoration: "none",
     fontSize: "2em",
     fontWeight: 300,
@@ -58,7 +58,7 @@ export default makeStyles((theme) => ({
     alignItems: "center",
   },
   purple: {
-    color: theme.palette.getContrastText(deepPurple[500]),
-    backgroundColor: deepPurple[500],
+    color: theme.palette.getContrastText(blueGrey[500]),
+    backgroundColor: blueGrey[500],
   },
 }));

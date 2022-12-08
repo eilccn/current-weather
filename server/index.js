@@ -2,7 +2,6 @@ import express from "express";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import cors from "cors";
-// The below CONNECTION_URL is hidden for security purposes
 import dotenv from "dotenv";
 import postRoutes from "./routes/posts.js";
 import userRoutes from "./routes/user.js";
@@ -21,7 +20,7 @@ app.get("/", (req, res) => {
   res.send("APP IS RUNNING");
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 
 mongoose
   .connect(process.env.CONNECTION_URL, {

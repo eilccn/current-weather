@@ -72,7 +72,17 @@ const Form = ({ currentId, setCurrentId }) => {
     return (
       <Paper className={classes.paper}>
         <Typography varient="h6" align="center">
-          Please sign in to create and like memories.
+          *****************Instructions***************** 
+          Sign in. Click the apple. Post an image in 
+          response to your prompt. Remember to 
+          tag your post with the exact prompt.
+
+          ********************About********************
+          This is a photo archival project that provides 
+          users with randomly generated nouns that are used as photo 
+          or drawing prompts. All of the photos compiled from 
+          multiple contributors will then be organized 
+          by prompt, displaying collections of iterations of each prompt.
         </Typography>
       </Paper>
     );
@@ -87,7 +97,7 @@ const Form = ({ currentId, setCurrentId }) => {
         onSubmit={handleSubmit}
       >
         <Typography variant="h6">
-          {currentId ? "Editing" : "Creating"} a Memory
+          {currentId ? "Editing" : "Creating"} a Post
         </Typography>
         {/* <TextField
           name="creator"
@@ -137,7 +147,7 @@ const Form = ({ currentId, setCurrentId }) => {
             value={postData.tags}
             onAdd={handleAdd}
             onDelete={handleDelete}
-            label="Tags"
+            label="Tags (use exact prompt)"
             variant="outlined"
             fullWidth
           />
@@ -154,7 +164,7 @@ const Form = ({ currentId, setCurrentId }) => {
         <Button
           className={classes.buttonSubmit}
           variant="contained"
-          color="primary"
+          color='#D3D3D3'
           size="large"
           type="submit"
           fullWidth
@@ -163,7 +173,7 @@ const Form = ({ currentId, setCurrentId }) => {
         </Button>
         <Button
           variant="contained"
-          color="secondary"
+          color="#7393B3"
           size="small"
           onClick={clear}
           fullWidth

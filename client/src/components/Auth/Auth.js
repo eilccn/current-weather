@@ -153,14 +153,14 @@ function Auth() {
             type="submit"
             fullWidth
             variant="contained"
-            color="primary"
+            color="#7393B3"
             className={classes.submit}
           >
             {isSignup ? "Sign Up" : "Sign in"}
           </Button>
           <Button
             className={classes.googleButton}
-            color="primary"
+            color="#6082B6"
             fullWidth
             onClick={() => login()}
             startIcon={<Icon />}

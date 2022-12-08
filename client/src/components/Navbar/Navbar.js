@@ -4,8 +4,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 //import decode from "jwt-decode";
 import useStyles from "./styles";
-import memoriesText from "../../images/memories-Text.png";
-import PFP from "../../images/PFP.jpg";
+import stillLife from "../../images/still-life.png";
+import PFP from "../../images/PFP.png";
 import decode from "jwt-decode";
 import Axios from "axios";
 
@@ -50,14 +50,14 @@ function Navbar() {
     <AppBar className={classes.appBar} position="static" color="inherit">
       <div className={classes.brandContainer}>
         <Link to={PREPEND_PATH + "/"} className={classes.brandContainer}>
-          <img src={memoriesText} alt="icon" height="45px" />
+          <img src={stillLife} alt="icon" height="45px" />
         </Link>
         <a
-          href="https://github.com/eduong100/MERN-Social-Media"
+          href="https://randomwordgenerator.com/noun.php"
           target="_blank"
           rel="noreferrer noopener"
         >
-          <img className={classes.image} src={PFP} alt="Github" height="50px" />
+          <img className={classes.image} src={PFP} alt="random prompt" height="50px" />
         </a>
       </div>
 
@@ -77,7 +77,7 @@ function Navbar() {
             <Button
               variant="contained"
               className={classes.logout}
-              color="secondary"
+              color="primary"
               onClick={logout}
             >
               Logout

@@ -1,5 +1,3 @@
-// Timestamp: 3:39:26
-
 import React from "react";
 import { Container } from "@material-ui/core";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
@@ -11,15 +9,15 @@ import Auth from "./components/Auth/Auth";
 import PostDetails from "./components/PostDetails/PostDetails";
 import { PREPEND_PATH } from "./constants/actionTypes.js";
 
-// PATH FOR GITHUB PAGES COMMENT OUT IF RUNNING LOCALLY:
+const clientId = process.env.REACT_APP_GOOGLE_CLIENT_ID;
 
 const App = () => {
   // const user = JSON.parse(localStorage.getItem("profile"));
-  const path = process.env.REACT_PATH;
+  const path = process.env.REACT_APP_BASE_URL;
   console.log(path);
   return (
     <BrowserRouter>
-      <GoogleOAuthProvider clientId="1009311873554-agv1klih1cdfc8picthsmmem4k2eli5i.apps.googleusercontent.com">
+      <GoogleOAuthProvider clientId={clientId}>
         <Container maxWidth="xl">
           <Navbar />
           <Routes>

@@ -83,7 +83,7 @@ const Home = () => {
               <TextField
                 name="search"
                 variant="outlined"
-                label="Search Memories"
+                label="Search Images"
                 fullWidth
                 value={search}
                 onKeyPress={handleKeyPress}
@@ -102,7 +102,7 @@ const Home = () => {
               <Button
                 onClick={searchPost}
                 className={classes.searchButton}
-                color="primary"
+                color="#D3D3D3"
                 variant="contained"
               >
                 Search
