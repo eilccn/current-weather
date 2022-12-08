@@ -1,4 +1,4 @@
-# Still Life Frontend
+# Still Life
 By Eileen Chang
 
 https://bluet-frontend.herokuapp.com/
