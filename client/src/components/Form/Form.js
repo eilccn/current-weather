@@ -72,17 +72,9 @@ const Form = ({ currentId, setCurrentId }) => {
     return (
       <Paper className={classes.paper}>
         <Typography varient="h6" align="center">
-          *****************Instructions***************** 
-          Sign in. Click the apple. Post an image in 
-          response to your prompt. Remember to 
-          tag your post with the exact prompt.
-
-          ********************About********************
-          This is a photo archival project that provides 
-          users with randomly generated nouns that are used as photo 
-          or drawing prompts. All of the photos compiled from 
-          multiple contributors will then be organized 
-          by prompt, displaying collections of iterations of each prompt.
+          ************************About***********************
+          This is a photo documentation project that sorts posts 
+          by keywords and tags. 
         </Typography>
       </Paper>
     );

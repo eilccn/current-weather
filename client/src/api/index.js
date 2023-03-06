@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://bluet-backend.herokuapp.com/",
+  baseURL: "https://current-weather-backend.herokuapp.com/",
   
 });
 

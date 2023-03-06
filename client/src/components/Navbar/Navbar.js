@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 //import decode from "jwt-decode";
 import useStyles from "./styles";
-import stillLife from "../../images/still-life.png";
+import stillLife from "../../images/cw.gif";
 import PFP from "../../images/PFP.png";
 import decode from "jwt-decode";
 import Axios from "axios";
