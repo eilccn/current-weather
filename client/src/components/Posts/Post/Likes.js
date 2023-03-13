@@ -1,6 +1,6 @@
 import React from "react";
-import ThumbUpAltIcon from "@material-ui/icons/ThumbUpAlt";
-import ThumbUpAltOutlined from "@material-ui/icons/ThumbUpAltOutlined";
+import CloudIcon from '@material-ui/icons/Cloud';
+import CloudOutlinedIcon from '@material-ui/icons/CloudOutlined';
 
 const Likes = ({ likes }) => {
   const user = JSON.parse(localStorage.getItem("profile"));
@@ -9,7 +9,7 @@ const Likes = ({ likes }) => {
   if (likes.length > 0) {
     return likes.find((like) => like === userId) ? (
       <>
-        <ThumbUpAltIcon fontSize="small" />
+        <CloudIcon fontSize="small" />
         &nbsp;
         {likes.length > 2
           ? `You and ${likes.length - 1} others`
@@ -17,14 +17,14 @@ const Likes = ({ likes }) => {
       </>
     ) : (
       <>
-        <ThumbUpAltOutlined fontSize="small" />
+        <CloudOutlinedIcon fontSize="small" />
         &nbsp;{likes.length} {likes.length === 1 ? "Like" : "Likes"}
       </>
     );
   }
   return (
     <>
-      <ThumbUpAltOutlined fontSize="small" />
+      <CloudOutlinedIcon fontSize="small" />
       &nbsp;Like
     </>
   );

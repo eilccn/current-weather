@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 //import decode from "jwt-decode";
 import useStyles from "./styles";
 import stillLife from "../../images/cw.gif";
-import PFP from "../../images/PFP.png";
+import PFP from "../../images/weather.gif";
 import decode from "jwt-decode";
 import Axios from "axios";
 
@@ -52,13 +52,15 @@ function Navbar() {
         <Link to={PREPEND_PATH + "/"} className={classes.brandContainer}>
           <img src={stillLife} alt="icon" height="45px" />
         </Link>
+        
         <a
-          href="https://randomwordgenerator.com/noun.php"
+          href="https://github.com/eilccn"
           target="_blank"
           rel="noreferrer noopener"
         >
           <img className={classes.image} src={PFP} alt="random prompt" height="50px" />
         </a>
+        
       </div>
 
       <Toolbar className={classes.toolbar}>
