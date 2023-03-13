@@ -72,19 +72,18 @@ const Form = ({ currentId, setCurrentId }) => {
     return (
       <Paper className={classes.paper}>
         <Typography varient="h6" align="center">
-          ***** Current Weather is a mini social media site. 
+          *~ Current Weather is a mini social media site. 
           Sign in or create an account to publish your own posts. 
           You can then search for specific posts by keyword or tag. 
-          When you click on a post for details, you'll be given
-          recommendations for similar posts. *****
-
-          ***** As of 2023, the site loosely functions as a portfolio 
-          for the creator and developer of the site. It showcases her 
-          previous work in 3D modeling, animation, illustration, as 
-          well as progress pictures and notes about her latest programming
-          projects. Sometimes she might post books or papers she's reading
-          or music she's listening to. The icon at the top of the screen 
-          links to her personal Github. *****
+          When you click on a post for details, you can leave 
+          comments on the post and also receive recommendations for 
+          similar posts. 
+          <br></br>
+          ~*~*~*~*~
+          <br></br>
+          *~ As of 2023, the site loosely functions as a portfolio 
+          for the creator and developer of the site. The icon at the 
+          top of the screen links to her personal Github. 
         </Typography>
       </Paper>
     );
